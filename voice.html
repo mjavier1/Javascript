@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<title>Js trasele</title>
+</head>
+<body>
+<script src="responsive-voice.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ 
+<textarea id="text" cols="45" rows="3">Hello world</textarea>
+ 
+<select id="voiceselection"></select> 
+ 
+<input 
+  onclick="responsiveVoice.speak($('#text').val(),$('#voiceselection').val());" 
+  type="button" 
+  value="Play" 
+/>
+ <!-- 
+
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+<input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
+
+ -->
+<script>
+//https://responsivevoice.org/text-to-speech-sdk/text-to-speech-widget/?fbclid=IwAR0jxqP3Ccd8LuqlNPECQVrAFULeiqtKMf0PaWXmp1976ZOsbpIDXD_tg-c
+        //Populate voice selection dropdown
+        var voicelist = responsiveVoice.getVoices();
+        var vselect = $("#voiceselection");
+        $.each(voicelist, function() {
+                vselect.append($("<option />").val(this.name).text(this.name));
+        });
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
