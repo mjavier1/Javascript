@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id = "lenght"></p>
+    <p id = "string"></p>
+    <p id = "jo"></p>
+    <script>
+    var fru = ["Apple","Orange","Pear","Grape"];
+
+fru.splice(2,0,"Lemon","Banana");
+
+    //fru[0] = "Kiwi";
+
+   // func eliminar apple primera columas
+ //  fru.shift();
+  // fru.pop();
+  //  fru.push("Cherry add");
+  // primera antes  fru.unshift("Cherry add");
+   // func pop eliminar ultima culmans
+    document.getElementById("demo").innerHTML = fru[0];
+  //simple array 
+    document.getElementById("lenght").innerHTML = fru.length;
+  document.getElementById("string").innerHTML = fru.toString();
+   document.getElementById("jo").innerHTML = fru.join("-");
+
+    </script>
+</body>
+</html>

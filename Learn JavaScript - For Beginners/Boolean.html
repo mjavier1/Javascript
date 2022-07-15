@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+   <p id="page"></p>
+    <script>
+  var b1 = Boolean(80);
+  var b2 = Boolean(2.86);
+  var b3 = Boolean(-10);
+  var b4 = Boolean("HI");
+  var b5 = Boolean("false");
+  var b6 = Boolean(1+8+10.14);
+  var b7 = Boolean(0);
+   
+  document.getElementById('page').innerHTML = 
+  "80"+ b1 + "<Br>"+
+  "2.86 is "+ b2 + "<Br>"+
+    "-10"+ b3 + "<Br>"+
+        "Hi"+ b4 + "<Br>"+
+            
+    "The string 'false' "+ b5 + "<Br>"+
+            
+        "Any expression(except zero) is "+ b6 + "<Br>"
+    "Zero is valvue" + "<Br>"+b7;
+     
+
+   </script>
+</body>
+</html>
